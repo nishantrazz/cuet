@@ -3,67 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body, input{
-            font-family: sans-serif;
-        }
-
-        form{
-            width: 40%;
-            margin: 0 auto;
-            padding: 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-            border: 1px solid silver;
-            border-radius: 16px;
-            background-color: whitesmoke;
-
-        }
-
-        form h2{
-            margin: 0;
-            padding: 0;
-        }
-        form div{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        form label{
-            margin-bottom: 8px;
-        }
-
-        form label::after{
-            content: " *";
-            color: red;
-        }
-
-        form input{
-            font-size: medium;
-        }
-
-        form div input{
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-        }
-
-        form input[type="button"]{
-            margin-top: 8px;
-            padding: 8px;
-            border-radius: 100px;
-            background-color: blueviolet;
-            border: none;
-            outline: none;
-            color: white;
-            font-size: medium;
-            letter-spacing: 0.05rem;
-        }
-    </style>
+    <title>Address</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <form action="">
@@ -86,13 +27,8 @@
        </div>
 
        <div>
-        <label>Enter your Country :</label>
-        <input type="text" name="country" id="country" placeholder="Country" required/>
-       </div>
-
-       <div>
-        <label>Enter your State/UT :</label>
-        <input type="text" name="state" id="state" placeholder="State/UT" required/>
+        <label>Enter your Pincode :</label>
+        <input type="text" name="pincode" id="pincode" placeholder="Pincode" required/>
        </div>
 
        <div>
@@ -101,13 +37,19 @@
        </div>
 
        <div>
-        <label>Enter your Pincode :</label>
-        <input type="text" name="pincode" id="pincode" placeholder="Pincode" required/>
+        <label>Enter your State/UT :</label>
+        <input type="text" name="state" id="state" placeholder="State/UT" required/>
+       </div>
+
+       <div>
+        <label>Enter your Country :</label>
+        <input type="text" name="country" id="country" placeholder="Country" required/>
        </div>
 
 
-
        <input type="button" value="Submit" id="Submit" >
+       <input type="reset" value="Reset">
+       <button onclick="document.location='present_address.html'" >Next</button>
        
     </form>
 
